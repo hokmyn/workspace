@@ -1,0 +1,91 @@
+.filter {
+  position: relative;
+}
+.filter__reset {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  color: #ccc;
+}
+.filter__title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.filter__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.filter__legend {
+  margin-bottom: 12px;
+}
+.filter__select {
+  width: 100%;
+}
+.filter__range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.filter__input {
+  height: 32px;
+  flex: 1 1 50%;
+  width: 100px;
+  padding: 0 16px;
+  border: 0;
+}
+.filter__input::placeholder {
+  color: #ccc;
+}
+.filter__checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.filter__label:not(:last-child) {
+  margin-bottom: 8px;
+}
+.filter__btn {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #a6adff;
+  border: 2px solid transparent;
+  transition: background-color, color 0.2s ease-in-out;
+}
+.filter__btn:focus-visible {
+  border-color: #4f58be;
+}
+.filter__btn:hover {
+  background-color: #2a18ff;
+  color: #fff;
+}
+
+@media (max-width: 940px) {
+  .filter__title {
+    position: fixed;
+    transform: scale(0);
+  }
+  .filter__input {
+    max-width: 140px;
+  }
+  .filter__checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px 70px;
+  }
+  .filter__btns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .filter__reset {
+    position: static;
+  }
+}

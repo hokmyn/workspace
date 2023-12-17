@@ -1,0 +1,13 @@
+.choices {
+  width: 100%;
+}
+.choices__inner {
+  background-color: #fff;
+  padding: 6px 16px;
+  min-height: 32px;
+  border: none;
+}
+.choices__list--single {
+  padding: 0;
+}
+
