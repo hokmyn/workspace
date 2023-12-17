@@ -115,7 +115,6 @@ const createCards = (data) =>
     return li;
   });
 
-
 const renderVacancies = (data) => {
   cardsList.textContent = "";
 
@@ -198,7 +197,6 @@ const init = () => {
 
   window.addEventListener("resize", () => {
     if(vacanciesFilterBtn.classList.contains("vacancies__filter-btn_active")) {
-      // dropDown.style.height = `${vacanciesFilter.scrollHeight}px`;
       closeFilter(
         vacanciesFilterBtn, vacanciesFilter,
         "vacancies__filter-btn_active", "vacancies__filter_active"
